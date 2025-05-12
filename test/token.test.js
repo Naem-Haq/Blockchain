@@ -1,15 +1,15 @@
 const { expect } = require("chai");
 const { ethers } = require("hardhat");
 
-describe("AndyToken & AndyTokenPayable", function () {
+describe("HaqToken & HaqTokenPayable", function () {
   let Token, token, owner, addr1;
 
   beforeEach(async () => {
     [owner, addr1] = await ethers.getSigners();
-    Token = await ethers.getContractFactory("AndyTokenPayable");
+    Token = await ethers.getContractFactory("HaqTokenPayable");
     token = await Token.deploy(
-      "Andy Token",
-      "ANDY",
+      "Haq Token",
+      "Haq",
       18,
       ethers.utils.parseUnits("1000000", 18),
       ethers.utils.parseUnits("0.01", "ether")
