@@ -1,0 +1,15 @@
+{
+  "name": "andy-token-dapp",
+  "version": "1.0.0",
+  "scripts": {
+    "deploy": "hardhat run --network holesky scripts/deploy.js",
+    "test": "hardhat test"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.6",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.17.0",
+    "dotenv": "^16.0.3",
+    "chai": "^4.3.7"
+  }
+}
