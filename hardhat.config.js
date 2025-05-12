@@ -6,7 +6,7 @@ module.exports = {
   networks: {
     holesky: {
       url: process.env.HOLESKY_RPC_URL,
-      accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : []
-    }
-  }
+      accounts: [process.env.PRIVATE_KEY],
+    },
+  },
 };
