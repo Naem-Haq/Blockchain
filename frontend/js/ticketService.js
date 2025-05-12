@@ -1,7 +1,7 @@
 import { provider, ethersLib } from "./web3Provider.js";
 import { loadBalances } from "./balanceChecker.js";
 
-const contractAddress = "YOUR_CONTRACT_ADDRESS_HERE";
+const contractAddress = "0xb927f3EdEda09B9A6708349b771e41e03518fa96";
 const abi = [
     "function buyToken() payable",
     "function pricePerToken() view returns (uint256)",
