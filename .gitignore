@@ -1,0 +1,13 @@
+cat > .gitignore <<EOF
+# Node & Hardhat
+node_modules/
+cache/
+artifacts/
+
+# Environment
+.env
+package-lock.json
+
+# OS files
+.DS_Store
+EOF

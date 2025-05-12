@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HaqToken DApp on Holesky</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header>
+    <h1>🪙 HaqToken DApp</h1>
+    <p>on the Ethereum Holesky Testnet</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <button id="connectWalletButton" class="btn-primary">Connect MetaMask</button>
+    </div>
+
+    <div id="walletInfo" class="card hidden">
+      <div class="field">
+        <label>Address</label>
+        <span id="address"></span>
+      </div>
+      <div class="field">
+        <label>ETH Balance</label>
+        <span id="ethBalance"></span>
+      </div>
+      <div class="field">
+        <label>Token Balance</label>
+        <span id="tokenBalance"></span>
+      </div>
+    </div>
+
+    <div id="buySection" class="card hidden">
+      <h2>Buy HAQ Tokens</h2>
+      <div class="field inline">
+        <input type="number" id="buyAmountEth" placeholder="ETH amount"/>
+        <button id="buyButton" class="btn-secondary">Buy</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <small>Built on Holesky • &nbsp;<a href="https://github.com/yourrepo">Source</a></small>
+  </footer>
+
+  <script type="module" src="js/web3Provider.js"></script>
+  <script type="module" src="js/transactionManager.js"></script>
+  <script type="module" src="js/walletManager.js"></script>
+  <script type="module" src="js/balanceChecker.js"></script>
+  <script type="module" src="js/ticketService.js"></script>
+</body>
+</html>
